@@ -6,11 +6,11 @@ successful_games = 0
 minimum_acceptable_sum = 18
 
 for i in range(1, games_to_simulate + 1, 1):
-  # draw 5 cards
   deck = [1,2,3,4,5,6,7,8,9,10,10,10,10,1,2,3,4,5,6,7,8,9,10,10,10,10,1,2,3,4,5,6,7,8,9,10,10,10,10,1,2,3,4,5,6,7,8,9,10,10,10,10]
   cards_dealt = []
   sum = 0
   for j in range(1, 5 + 1, 1):
+    # draw 5 cards
     card_dealt = deck.pop(random.randint(0, len(deck)-1))
     cards_dealt.append(card_dealt)
     sum += card_dealt
